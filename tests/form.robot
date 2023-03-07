@@ -41,6 +41,7 @@ Fechar navegador
 
 ** Test Cases **
 Scene 1: Preencher Formnulario
+    [Tags]  regressivo
     Abrir navegador
     Preencer campos
     Clicar em Submit

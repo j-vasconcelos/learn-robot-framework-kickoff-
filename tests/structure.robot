@@ -16,6 +16,7 @@ CloseBrowser
 
 ** Test Cases **
 Scene 1: Open Web Site Fatec Rubens Lara
+    [Tags]  regressivo
     Open Fatec Rubens Lara
     CloseBrowser
 

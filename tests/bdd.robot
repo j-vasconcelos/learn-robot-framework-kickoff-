@@ -31,7 +31,7 @@ E clico na primeira opção da lista
 Então o vídeo é executado
     Wait Until Element Is Visible    ${validacao}     2
     Element Should Be Visible    ${validacao} 
-    Sleep     2s
+    Sleep     1s
     Close Browser
  
 ** Test Cases **

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230307 20:51:59.538" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\João Gabriel\Documents\Development\Robot-Framework\tests">
+<suite id="s1-s1" name="Form" source="C:\Users\João Gabriel\Documents\Development\Robot-Framework\tests\form.robot">
+<test id="s1-s1-t1" name="Scene 1: Preencher Formnulario" line="43">
+<kw name="Abrir navegador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230307 20:51:59.796" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230307 20:51:59.796" endtime="20230307 20:52:02.329"/>
+</kw>
+<status status="PASS" starttime="20230307 20:51:59.796" endtime="20230307 20:52:02.329"/>
+</kw>
+<kw name="Preencer campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>Joao</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230307 20:52:02.330" level="INFO">Typing text 'Joao' into text field '//input[@id="name"]'.</msg>
+<status status="PASS" starttime="20230307 20:52:02.329" endtime="20230307 20:52:02.414"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_phone}</arg>
+<arg>11999934555</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230307 20:52:02.414" level="INFO">Typing text '11999934555' into text field '//input[@id="phone"]'.</msg>
+<status status="PASS" starttime="20230307 20:52:02.414" endtime="20230307 20:52:02.477"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>joao@joao.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230307 20:52:02.478" level="INFO">Typing text 'joao@joao.com' into text field '//input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230307 20:52:02.477" endtime="20230307 20:52:02.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230307 20:52:02.542" level="INFO">Typing text 'teste123' into text field '//input[@id="password"]'.</msg>
+<status status="PASS" starttime="20230307 20:52:02.541" endtime="20230307 20:52:02.599"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textarea_address}</arg>
+<arg>R. Jose 14 - Interlagos, São Paulo - SP</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230307 20:52:02.600" level="INFO">Typing text 'R. Jose 14 - Interlagos, São Paulo - SP' into text field '//textarea[@id="address"]'.</msg>
+<status status="PASS" starttime="20230307 20:52:02.600" endtime="20230307 20:52:02.671"/>
+</kw>
+<status status="PASS" starttime="20230307 20:52:02.329" endtime="20230307 20:52:02.671"/>
+</kw>
+<kw name="Clicar em Submit">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230307 20:52:02.672" level="INFO">Clicking element 'name:submit'.</msg>
+<status status="PASS" starttime="20230307 20:52:02.672" endtime="20230307 20:52:02.709"/>
+</kw>
+<status status="PASS" starttime="20230307 20:52:02.671" endtime="20230307 20:52:02.709"/>
+</kw>
+<tag>regressivo</tag>
+<status status="PASS" starttime="20230307 20:51:59.795" endtime="20230307 20:52:02.709"/>
+</test>
+<status status="PASS" starttime="20230307 20:51:59.560" endtime="20230307 20:52:02.711"/>
+</suite>
+<suite id="s1-s2" name="Structure" source="C:\Users\João Gabriel\Documents\Development\Robot-Framework\tests\structure.robot">
+<test id="s1-s2-t1" name="Scene 1: Open Web Site Fatec Rubens Lara" line="18">
+<kw name="Open Fatec Rubens Lara">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://fatecrl.edu.br</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230307 20:52:02.720" level="INFO">Opening browser 'chrome' to base url 'https://fatecrl.edu.br'.</msg>
+<status status="PASS" starttime="20230307 20:52:02.719" endtime="20230307 20:52:05.868"/>
+</kw>
+<status status="PASS" starttime="20230307 20:52:02.719" endtime="20230307 20:52:05.868"/>
+</kw>
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<kw name="CloseBrowser">
+<msg timestamp="20230307 20:52:05.889" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<status status="FAIL" starttime="20230307 20:52:05.889" endtime="20230307 20:52:05.889"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.889" endtime="20230307 20:52:05.889"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.889" endtime="20230307 20:52:05.889"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.889" endtime="20230307 20:52:05.890"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.888" endtime="20230307 20:52:05.890"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.888" endtime="20230307 20:52:05.890"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.888" endtime="20230307 20:52:05.890"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.888" endtime="20230307 20:52:05.891"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.888" endtime="20230307 20:52:05.891"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.887" endtime="20230307 20:52:05.891"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.887" endtime="20230307 20:52:05.891"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.886" endtime="20230307 20:52:05.891"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.886" endtime="20230307 20:52:05.892"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.886" endtime="20230307 20:52:05.892"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.885" endtime="20230307 20:52:05.892"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.885" endtime="20230307 20:52:05.892"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.885" endtime="20230307 20:52:05.892"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.885" endtime="20230307 20:52:05.892"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.885" endtime="20230307 20:52:05.892"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.885" endtime="20230307 20:52:05.893"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.885" endtime="20230307 20:52:05.893"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.883" endtime="20230307 20:52:05.893"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.883" endtime="20230307 20:52:05.893"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.883" endtime="20230307 20:52:05.893"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.883" endtime="20230307 20:52:05.893"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.883" endtime="20230307 20:52:05.893"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.882" endtime="20230307 20:52:05.894"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.882" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.881" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.881" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.881" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.881" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.881" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.880" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.880" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.880" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.880" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.880" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.880" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.879" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.879" endtime="20230307 20:52:05.895"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.879" endtime="20230307 20:52:05.896"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.896"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.896"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.896"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.896"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.896"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.896"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.897"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.897"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.897"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.878" endtime="20230307 20:52:05.897"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.877" endtime="20230307 20:52:05.897"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.877" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.877" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.876" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.876" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.876" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.876" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.875" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.875" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.875" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.875" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.875" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.875" endtime="20230307 20:52:05.899"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.874" endtime="20230307 20:52:05.900"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.874" endtime="20230307 20:52:05.900"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.874" endtime="20230307 20:52:05.900"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.874" endtime="20230307 20:52:05.900"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.874" endtime="20230307 20:52:05.900"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.873" endtime="20230307 20:52:05.900"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.873" endtime="20230307 20:52:05.900"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.873" endtime="20230307 20:52:05.900"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.873" endtime="20230307 20:52:05.900"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.873" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.873" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.873" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.872" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.872" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.872" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.872" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.872" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.872" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.872" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.872" endtime="20230307 20:52:05.901"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.872" endtime="20230307 20:52:05.902"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.871" endtime="20230307 20:52:05.902"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.871" endtime="20230307 20:52:05.902"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.871" endtime="20230307 20:52:05.902"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.870" endtime="20230307 20:52:05.902"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.870" endtime="20230307 20:52:05.902"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.870" endtime="20230307 20:52:05.902"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.870" endtime="20230307 20:52:05.902"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.870" endtime="20230307 20:52:05.902"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.870" endtime="20230307 20:52:05.903"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.870" endtime="20230307 20:52:05.903"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.870" endtime="20230307 20:52:05.903"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.869" endtime="20230307 20:52:05.903"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.869" endtime="20230307 20:52:05.903"/>
+</kw>
+<status status="FAIL" starttime="20230307 20:52:05.869" endtime="20230307 20:52:05.903"/>
+</kw>
+<tag>regressivo</tag>
+<status status="FAIL" starttime="20230307 20:52:02.719" endtime="20230307 20:52:05.904">Maximum limit of started keywords and control structures exceeded.</status>
+</test>
+<status status="FAIL" starttime="20230307 20:52:02.715" endtime="20230307 20:52:05.904"/>
+</suite>
+<status status="FAIL" starttime="20230307 20:51:59.540" endtime="20230307 20:52:05.906"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="1" skip="0">regressivo</stat>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Form">Tests.Form</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="Structure">Tests.Structure</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -4,16 +4,16 @@ Library  SeleniumLibrary
 ** Variables **
 ${url}                 https://itera-qa.azurewebsites.net/home/automation
 ${browser}             chrome
-${input_name}          id:name
-${input_phone}         id:phone
-${input_email}         id:email
-${input_password}      id:password
-${textarea_address}    id:address
+${input_name}          //input[@id="name"]
+${input_phone}         //input[@id="phone"]
+${input_email}         //input[@id="email"]
+${input_password}      //input[@id="password"]
+${textarea_address}    //textarea[@id="address"]
 ${button_submit}       name:submit
-${rb_gender}           id:male
-${chk_monday}          id:monday
-${chk_wednesday}       id:wednesday
-${chk_friday}          id:friday
+${rb_gender}           //input[@id="male"]
+${chk_monday}          //input[@id="monday"]
+${chk_wednesday}       //input[@id="wednesday"]
+${chk_friday}          //input[@id="friday"]
 
 ** Keywords **
 Abrir navegador

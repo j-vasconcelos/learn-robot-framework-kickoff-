@@ -35,8 +35,6 @@ E realize o cadastro
     Click Element                      ${Login.Button_Signup}
 
 E faça o Login
-    #Wait Until Element Is Visible  ${Login.A_OpcaoLogin}      10
-    #Click Element                  ${Login.A_OpcaoLogin} 
     Wait Until Element Is Visible  ${Login.Input_EmailLogin}  10
     Input Text                     ${Login.Input_EmailLogin}  ${Email}
     Wait Until Element Is Visible  ${Login.Input_SenhaLogin}  10
